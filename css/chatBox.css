@@ -1,0 +1,37 @@
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+.chatbox-message-item {
+    width: 51%;
+    padding: 1rem;
+    overflow-wrap: anywhere;
+}
+.chatbox-message-item.sent {
+    align-self: flex-end;
+    background: #025c4b;
+    color: white;
+    border-radius: 0.75rem 0 0.75rem 0.75rem;
+    flex: 1;
+    height: max-content;
+    text-align: right;
+    width: auto;
+    max-width: 450px;
+}
+.chatbox-message-item.received {
+    background: #202c33;
+    border-radius: 0 0.75rem 0.75rem 0.75rem;
+    box-shadow: 0.25rem 0.25rem 1.5rem rgba(0, 0, 0, 0.05);
+    max-height: 58px;
+    color: white;
+    flex: 1;
+    text-align: left;
+    width: fit-content;
+}
+.chatbox-message-item-time {
+    float: right;
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+    display: inline-block;
+    margin-left: 10px;
+}
